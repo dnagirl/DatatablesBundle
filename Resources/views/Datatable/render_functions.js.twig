@@ -144,4 +144,8 @@ function render_editable_boolean(data, type, row, meta, colData, trueLabel, fals
 
     return result;
 }
+
+    {% block user_render_functions %}
+        {#put your render functions here#}
+    {% endblock %}
 {% endblock renderFunctions %}
