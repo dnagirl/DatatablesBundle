@@ -36,9 +36,11 @@
     "stripeClasses": [{{ view_options.stripeClasses|join(", ")|json_encode|raw }}],
 {% endif %}
 
+{% if  view_options.rowId %}
 "rowId": function(row) {
-    return '{{ view_table_id  }}_' + row.{{  view_options.rowId }}
+    return '{{ view_table_id  }}_' + row.{{  view_options.rowId }};
 },
+{% endif %}
 
 {#
 "class"               -> datatable_html.html.twig
