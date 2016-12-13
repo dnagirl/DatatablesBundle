@@ -96,7 +96,7 @@ interface ColumnInterface
     public function getAlias();
 
     /**
-     * Check wether an association is given.
+     * Check whether an association is given.
      *
      * @return boolean
      */
